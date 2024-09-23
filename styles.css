@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #000, #222);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+section {
+    padding: 60px 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+#products .product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
